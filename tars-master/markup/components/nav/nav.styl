@@ -1,0 +1,56 @@
+nav
+    height 48px
+    background-image: -moz-linear-gradient( 90deg, rgb(109,7,20) 0%, rgb(126,19,33) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(109,7,20) 0%, rgb(126,19,33) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(109,7,20) 0%, rgb(126,19,33) 100%);
+    
+    
+    .topmenu
+        height inherit
+        li
+            height inherit
+            float left
+            display inline-table
+            position relative
+            &:hover
+                opacity .9
+                
+            &:before
+                content '';
+                abs(block,1px,100%,0,0)
+                background #5f0713
+                
+            &:after
+                content '';
+                abs(block,1px,100%,0,1px)
+                background #841524
+
+
+            
+            a
+                font-size 18px
+                font-weight 300
+                color #fff
+                display block
+                padding 0 49px
+                m-speed(.3s)
+                &:hover
+                    color #f5edc9
+                
+        li:first-child
+                
+            &:before
+                display:none
+                
+            &:after
+                display:none
+                
+                
+        li:last-child
+                
+            &:before
+                display:none
+                
+            &:after
+                display:none
+                
