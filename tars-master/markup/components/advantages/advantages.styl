@@ -12,6 +12,9 @@
         float left
         display inline-block
         padding 0 15px 0px
+        @media screen and (min-width: 300px) and (max-width: 1199px)
+            width 100% !important
+            padding 0 0px
         
 
         
@@ -23,6 +26,7 @@
                  
     &__row--three
         width 460px + 30
+
         
         
         
@@ -30,6 +34,11 @@
         float left
         width 100%
         margin-bottom 30px
+        @media screen and (min-width: 300px) and (max-width: 1199px)
+           width 50%
+           padding 0 15px 0px
+    
+    
         
     &__article--number
         font-size 24px
@@ -40,6 +49,8 @@
         height auto
         float left
         bgP(top,center,cover)
+        @media screen and (min-width: 300px) and (max-width: 1199px)
+            height 170px !important
         
         
     &_img__1
@@ -70,3 +81,6 @@
         font-size 16px
         background colfirm
         line-height 21px
+        @media screen and (min-width: 300px) and (max-width: 1199px)
+            height 106px
+    

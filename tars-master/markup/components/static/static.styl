@@ -1,7 +1,9 @@
 .static
     background #2f2a2a
-    height 450px
+    min-height 450px
     position relative
+    
+        
     
     &:before
         content '';
@@ -55,6 +57,11 @@
     &__item
         float left
         width 20%
+        @media screen and (min-width: 300px) and (max-width: 1199px)
+            width 33.33333% !important
+            height 190px
+            padding-left 20px
+            margin-bottom 35px
         
     &_title
         float-w(100%)
