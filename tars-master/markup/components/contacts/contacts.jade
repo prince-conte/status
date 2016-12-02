@@ -1,0 +1,21 @@
+mixin contacts(data)
+
+    section.contacts#contacts
+        .content
+            h3 Контакты
+            
+            .contacts__grid
+                a.header__contact-block_link(href="#") <i class="mail"></i> info@pravovoistatus.ru
+                a.header__contact-block_link(href="#") <i class="skype"></i> praovoistatus.ru                 
+                a.header__contact-block_link(href="#") <i class="phone"></i> +7 (495) 740-33-17 
+                a.header__contact-block_link(href="#") <i class="phone2"></i> +7 (926) 390-19-35
+                
+            form.contacts__form
+                input.contacts_input-one.contacts_input(placeholder="Ваше имя" required)
+                input.contacts_input-two.contacts_input(placeholder="Телефон")
+                span.contacts_label или
+                input.contacts_input-three.contacts_input(placeholder="E-mail")
+                input.contacts_input-four.contacts_input(placeholder="Комментарий")
+                input.contacts_button(type="submit" value="Заказать звонок")
+
+                
