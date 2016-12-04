@@ -3,6 +3,8 @@ nav
     background-image: -moz-linear-gradient( 90deg, rgb(109,7,20) 0%, rgb(126,19,33) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(109,7,20) 0%, rgb(126,19,33) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(109,7,20) 0%, rgb(126,19,33) 100%);
+    @media screen and (min-width: 300px) and (max-width: 999px)
+        height auto
     
     
     .topmenu
@@ -15,15 +17,26 @@ nav
             &:hover
                 opacity .9
                 
+            @media screen and (min-width: 300px) and (max-width: 999px)
+                height 48px
+                                    
+
+                
+                           
+                
             &:before
                 content '';
                 abs(block,1px,100%,0,0)
                 background #5f0713
+                @media screen and (min-width: 300px) and (max-width: 999px)
+                    display none
                 
             &:after
                 content '';
                 abs(block,1px,100%,0,1px)
                 background #841524
+                @media screen and (min-width: 300px) and (max-width: 999px)
+                    display none
 
 
             
@@ -39,6 +52,13 @@ nav
                     
                 @media screen and (min-width: 1000px) and (max-width: 1199px)
                     padding 0 29px
+                                    
+                @media screen and (min-width: 600px) and (max-width: 999px)
+                    padding 0 29px
+                                                    
+                @media screen and (min-width: 300px) and (max-width: 599px)
+                    padding-left 20px
+                    font-size 16px
                 
         li:first-child
                 

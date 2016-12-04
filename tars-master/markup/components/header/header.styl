@@ -3,8 +3,12 @@ height-media = 205px / 2
 .header
     background #2f2a2a
     height 105px
+    
     @media screen and (min-width: 1000px) and (max-width: 1199px)
         height 205px
+      
+    @media screen and (min-width: 300px) and (max-width: 999px)
+        height auto
     
     .content
         height inherit
@@ -16,6 +20,13 @@ height-media = 205px / 2
         display inline-table
         @media screen and (min-width: 1000px) and (max-width: 1199px)
             height height-media
+        @media screen and (min-width: 300px) and (max-width: 999px)
+            height 90px
+            padding 10px 0
+            float none
+            position relative
+            margin 0 auto
+            display block
         
         img
             display block
@@ -30,6 +41,15 @@ height-media = 205px / 2
         height inherit
         @media screen and (min-width: 1000px) and (max-width: 1199px)
             height height-media
+        @media screen and (min-width: 300px) and (max-width: 999px)
+            height 90px
+            padding 10px 0
+            float none
+            position relative
+            margin 0 auto
+            display block
+            width auto
+        
         
                 
     &__contact-block__item
@@ -53,6 +73,9 @@ height-media = 205px / 2
         m-speed(.3s)
         &:hover
             color #f5edc9
+            
+        @media screen and (min-width: 300px) and (max-width: 599px)
+            font-size 16px
         
         i
 
@@ -89,10 +112,12 @@ height-media = 205px / 2
         float right
         height inherit
         display inline-table
-        @media screen and (min-width: 1000px) and (max-width: 1199px)
+        @media screen and (min-width: 300px) and (max-width: 1199px)
             height height-media
             width 100%
             text-align center
             margin-top -15px
+            
+        
 
     

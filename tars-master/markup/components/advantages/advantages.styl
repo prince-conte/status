@@ -37,12 +37,22 @@
         @media screen and (min-width: 300px) and (max-width: 1199px)
            width 50%
            padding 0 15px 0px
-    
+           
+        @media screen and (min-width: 600px) and (max-width: 999px)
+           width 100%
+           padding 0 15px 0px
+               
+        @media screen and (min-width: 300px) and (max-width: 599px)
+           width 100%
+           padding 0 0px 0px
     
         
     &__article--number
         font-size 24px
         font-weight 700
+        @media screen and (min-width: 300px) and (max-width: 1199px)
+            display none
+        
         
     &_img
         width 100%
@@ -51,6 +61,8 @@
         bgP(top,center,cover)
         @media screen and (min-width: 300px) and (max-width: 1199px)
             height 170px !important
+        @media screen and (min-width: 300px) and (max-width: 1199px)
+            height 230px !important
         
         
     &_img__1
@@ -81,6 +93,9 @@
         font-size 16px
         background colfirm
         line-height 21px
-        @media screen and (min-width: 300px) and (max-width: 1199px)
+        @media screen and (min-width: 900px) and (max-width: 1199px)
             height 106px
+            
+        @media screen and (min-width: 300px) and (max-width: 899px)
+            height auto
     

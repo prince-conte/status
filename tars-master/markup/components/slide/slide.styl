@@ -1,11 +1,15 @@
 .slide
     position relative
     margin-bottom 120px
+    @media screen and (min-width: 300px) and (max-width: 599px)
+        margin-bottom 155px
     
     img
         width 100%
         height auto
         display block
+        @media screen and (min-width: 300px) and (max-width: 599px)
+            display none
         
         
     &__info
@@ -17,6 +21,16 @@
         width: 1080px;
         height: 86px;
         z-index: 188;
+        @media screen and (min-width: 300px) and (max-width: 999px)
+            float left
+            position relative
+            width 100%
+            height auto
+            box-shadow 0
+            margin-left 0
+            left 0
+            top 0
+
         
         
         article
@@ -30,11 +44,21 @@
                 text-align center
                 margin 0px
                 line-height 10px
+                @media screen and (min-width: 300px) and (max-width: 599px)
+                    line-height 20px
+                    text-align left
                 b
                     font-weight 700
                     line-height 30px
+                    @media screen and (min-width: 300px) and (max-width: 599px)
+                        line-height inherit
                     
-                @media screen and (min-width: 300px) and (max-width: 1199px)
+                @media screen and (min-width: 600px) and (max-width: 1199px)
                     font-size 20px
                     padding 0 45px
+
+                    
+                @media screen and (min-width: 300px) and (max-width: 599px)
+                    font-size 16px
+                    padding 0 15px
 
