@@ -27,6 +27,7 @@ height-media = 205px / 2
             position relative
             margin 0 auto
             display block
+            width 280px
             
         
         img
@@ -62,6 +63,23 @@ height-media = 205px / 2
             width 214px
             .header__contact-block_link
                 float right
+                
+             @media screen and (min-width: 300px) and (max-width: 999px)
+                 width 100%
+                 text-align center
+                 .header__contact-block_link
+                    float none
+                    display block
+                    
+                
+        @media screen and (min-width: 300px) and (max-width: 999px)
+            width 100%
+            text-align center
+            
+            
+            .header__contact-block_link
+                float none
+                margin 0 20px
 
                 
                     
@@ -81,7 +99,8 @@ height-media = 205px / 2
         i
 
             display inline-block
-            background-image url(../img/svg-sprite/sprite.svg)
+            background-image url(../img/general/sprite.png)
+            background-image url(../img/svg-sprite/sprite.svg), none
             position relative
             margin-right 15px
             

@@ -9,6 +9,27 @@ nav
     
     .topmenu
         height inherit
+        text-align center
+        
+        .burger-button
+            display none
+            width 100%
+            padding 5px 0
+            bgP(center,center,contain)
+            background url(../img/general/burger.svg)
+            &:before
+                display none
+            &:after
+                display none
+                
+            @media screen and (min-width: 300px) and (max-width: 999px)
+                display block
+                
+            
+                
+        
+        
+        
         li
             height inherit
             float left
@@ -19,6 +40,9 @@ nav
                 
             @media screen and (min-width: 300px) and (max-width: 999px)
                 height 48px
+                display none
+                width 100%
+                text-align center
                                     
 
                 
@@ -53,12 +77,12 @@ nav
                 @media screen and (min-width: 1000px) and (max-width: 1199px)
                     padding 0 29px
                                     
-                @media screen and (min-width: 600px) and (max-width: 999px)
-                    padding 0 29px
                                                     
-                @media screen and (min-width: 300px) and (max-width: 599px)
-                    padding-left 20px
+                @media screen and (min-width: 300px) and (max-width: 999px)
+                    padding 20px 0
                     font-size 16px
+                    display block
+                    text-align center
                 
         li:first-child
                 
