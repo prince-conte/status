@@ -118,3 +118,31 @@ p
     font-size BASE_SIZE
     
     
+
+    
+#top
+    position fixed
+    display none
+    height 60px
+    width 60px 
+    bottom 40px
+    right  60px
+    background-color #2f2a2a
+    m-speed(.6s)
+    &:hover
+        background colfirm
+        
+    @media screen and (min-width: 300px) and (max-width: 999px)
+        top 0px
+        right  0px
+    
+    span
+        position absolute
+        background-image url(../img/general/top.png)
+        bgP(center,center,contain)
+        width 35px
+        height 35px
+        top 14px
+        left 14px
+    
+    
