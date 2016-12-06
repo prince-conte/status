@@ -1,7 +1,10 @@
 mixin slide(data)
     
     .slide
-        img(src="static/img/general/hbg.jpg" alt="")
+        picture
+            source(media="(min-width: 768px)" srcset="static/img/general/hbg.jpg 1200w" sizes="100vw")
+            source(media="(min-width: 300px)" srcset="static/img/general/hbg-min.jpg 800w" sizes="100vw")
+            img(srcset="images/400crop.jpg 400w" sizes="100vw")  
         
         .slide__info
             article
